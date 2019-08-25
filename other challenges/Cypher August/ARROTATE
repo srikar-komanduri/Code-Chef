@@ -1,0 +1,24 @@
+T=int(input())
+for _ in range(T):
+    res=''
+    N,M=map(int,input().split())
+    pots=list(map(int,input().split()))
+    broke=list(map(int,input().split()))
+    
+    for i in broke:
+        del(pots[pots.index(i)])
+    #print(pots)
+    
+    for i in broke:
+        pots.append(i)
+    
+    res=''
+    for i in pots:
+        res=res+str(i)+' '
+        
+    print(res[:-1])
+    
+    
+    
+    
+    
