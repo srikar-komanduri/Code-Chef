@@ -1,0 +1,8 @@
+T=int(input())
+for _ in range(T):
+    N=int(input())
+    string=str(bin(N))
+    string=string[2:]
+    print(string.count('0'))
+    
+    
